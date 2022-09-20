@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEO PLAYER</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <section class="parent">
+        <div class="vid-container">
+            <video  class="video"></video>
+            <div class="controls">
+                <div class="first">
+                    <span class="current-time">00:00</span>
+                    <div class="load-container">
+                        <div class="load">
+
+                        </div>
+                    </div>
+                    <span class="duration">00:00</span>
+                </div>
+                <div class="second">
+                    <span class="material-icons" id="mute">
+                        volume_up
+                    </span>
+                    <div>
+                        <span class="material-icons" id="previous">
+                            skip_previous
+                        </span>
+                        <span class="material-icons" id="play">
+                            play_arrow
+                        </span>
+                        <span class="material-icons" id="next">
+                            skip_next
+                        </span> 
+                    </div>
+                    <div>
+                        <span class="material-icons" id="loop">
+                            loop
+                        </span>
+                        <span class="material-icons" id="fullscreen">
+                            fullscreen
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="video.js"></script>
+</body>
+</html>

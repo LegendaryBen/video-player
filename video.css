@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,*:before,*:after{
+    box-sizing: border-box;margin: 0;padding: 0;user-select: none;
+}
+
+.parent{
+    width:100%;height: 100vh;overflow: auto;background-color:black;display: flex;justify-content: center;
+    align-items: center;
+}
+
+.vid-container{
+    width: 700px;height: 400px;background-color:white;overflow: hidden;position: relative;transition: 0.2s;
+
+}
+
+.vid-container video {
+    width: 100%;height: 100%;transition: 0.2s;
+}
+
+.controls{
+    width: 100%;height: 100px;transition:0.5s;position: absolute;bottom:-100%;background-color: rgba(0, 0, 0,0.3);
+    padding: 10px;
+}
+
+.vid-container:hover .controls{
+    bottom: 0;
+}
+
+.first{
+    display: flex;justify-content: space-between;align-items: center;
+}
+
+.first span{
+    color:black;font-size:15px;font-weight: bold;
+}
+
+.first>*{
+    flex-basis: auto;
+}
+
+.load-container{
+    flex-basis: 85%;height:7px;overflow: hidden;
+}
+
+.load{
+    height: 100%;background-color: rgba(33, 33, 186, 0.827);
+}
+
+.second{
+    display: flex;justify-content: space-between;align-items: center;margin-top: 20px;width:100%;
+}
+
+.second>*{
+ flex-basis: auto;
+}
+
+.second>div{
+    display: flex;align-items: center;
+}
+
+.second>div>*{
+    margin-left: 15px;
+}
+
+.second span{
+    color: white;font-size: 25px; padding: 7px;background-color:rgba(33, 33, 186, 0.827);border-radius:50%;
+    transition: 0.2s;
+}
+
+.second span:hover{
+    transform: scale(150%);
+}
+
+#loop{
+    background-color: transparent;
+}
+
+@media only screen and (max-width:426px){
+    .vid-container{
+        width:100%;height:350px;
+    }
+
+    .load-container{
+        flex-basis:70%;height:7px;overflow: hidden;
+    }
+
+    .second span{
+        color: white;font-size: 25px; padding: 5px;background-color:rgba(33, 33, 186, 0.827);border-radius:50%;
+        transition: 0.2s;
+    }
+
+}
